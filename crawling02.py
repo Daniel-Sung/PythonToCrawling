@@ -19,6 +19,7 @@ bs = BeautifulSoup(driver.page_source, features="html.parser")
 courses = bs.select("#gatsby-focus-wrapper > div > div.container.css-93pq91 > div.col-md-8 > div > div > div > div.css-10s95pl > a")
 courseList = []
 
+#for 문으로 웹페이지내 코스 정보 획득
 for c in courses:
     link = c.attrs["href"]
     title = c.select_one("h4").getText().strip()
