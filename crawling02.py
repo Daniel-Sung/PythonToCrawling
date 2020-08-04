@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(3)
 driver.get(url)
 
-#페이지 더보기 버튼의 xpath를 취득
+#페이지 더보기 버튼의 xpath를 취득 !!git 에서 수정
 btn = driver.find_element_by_xpath("""//*[@id="gatsby-focus-wrapper"]/div/div[1]/div[1]/div/div/div[4]/button""")
 btn.click()
 
